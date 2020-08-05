@@ -23,7 +23,8 @@ public class Ks75Application {
         for (Department d:departments ){
             System.out.println(d.getId()+d.getDeptname());
         }*/
-
+		
+		//分页查询
       PageUtil<Enterprisetalent> page=enterprisetalent.getSalePage(-1,1,5);
 
 		System.out.println("当前页码:"+page.getPageIndex());
